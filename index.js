@@ -1,4 +1,4 @@
-console.log('Starting the Haruno')
+console.log('Starting...')
 
 import { join, dirname } from 'path'
 import { createRequire } from "module";
@@ -16,7 +16,7 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('Haruno', {
+say('Pawaa-chan', {
   font: 'block',
   align: 'center',
   colors: ['#a8c3bc'] 
