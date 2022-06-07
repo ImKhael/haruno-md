@@ -147,7 +147,6 @@ export async function handler(chatUpdate) {
                 if (!'self' in settings) settings.self = false
                 if (!'backup' in settings) settings.backup = true
                 if (!isNumber(settings.backupDB)) settings.backupDB = 0
-                if (!'nhentai' in settings) settings.nhentai = true
             } else global.db.data.settings[this.user.jid] = {
                 autoread: false,
                 anon: true,
@@ -159,7 +158,6 @@ export async function handler(chatUpdate) {
                 self: false,
                 backup: true,
                 backupDB: 0,
-                nhentai: true,
             }
         } catch (e) {
             console.error(e)
